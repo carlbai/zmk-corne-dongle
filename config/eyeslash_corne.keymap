@@ -27,15 +27,6 @@
 };
 
 / {
-    behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Tab/Escape Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp ESC>;
-        };
-    };
-
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -87,12 +78,12 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "NAVIGATION";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp GRAVE  &trans    &kp UP    &trans          &trans         &trans                                  &mmv MOVE_UP                     &trans         &kp PG_UP  &kp UP    &kp PG_DN  &trans  &kp DEL
+&trans     &kp LEFT  &kp DOWN  &kp RIGHT       &kp LSHFT      &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RC(MINUS)  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+&trans     &trans    &trans    &trans          &trans         &trans      &trans                     &mmv MOVE_DOWN                   &trans         &trans     &trans    &trans     &trans  &kp ENTER
+                               &kp LA(LCTRL)  &kp LA(LGUI)  &kp LS(LGUI)                                                            &kp RS(LALT)   &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
