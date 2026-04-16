@@ -92,8 +92,8 @@ layers:
   - '}'
   - '|'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Gui+$$mdi:apple-keyboard-control$$
+  - Sft+LGUI
   - {type: held}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
