@@ -80,8 +80,8 @@
         raise_layer {
             display-name = "NAVIGATION";
             bindings = <
-&kp GRAVE  &trans    &kp UP    &trans          &trans         &trans                                  &mmv MOVE_UP                     &trans         &kp PG_UP  &kp UP    &kp PG_DN  &trans  &kp DEL
-&trans     &kp LEFT  &kp DOWN  &kp RIGHT       &kp LSHFT      &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RC(MINUS)  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+&kp GRAVE  &mkp LCLK      &mmv MOVE_UP    &mkp RCLK       &trans         &trans                                  &mmv MOVE_UP                     &trans         &kp PG_UP  &kp UP    &kp PG_DN  &trans  &kp DEL
+&trans     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &kp LSHFT      &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RC(MINUS)  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
 &trans     &trans    &trans    &trans          &trans         &trans      &trans                     &mmv MOVE_DOWN                   &trans         &trans     &trans    &trans     &trans  &kp ENTER
                                &kp LA(LCTRL)  &kp LA(LGUI)  &kp LS(LGUI)                                                            &kp RS(LALT)   &trans     &trans
             >;
